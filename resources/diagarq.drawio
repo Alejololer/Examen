@@ -1,9 +1,55 @@
 <mxfile host="65bd71144e">
     <diagram id="YpvR981H4v2GeV9CaRRh" name="Page-1">
-        <mxGraphModel dx="994" dy="357" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="994" dy="383" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
+                <mxCell id="17" style="edgeStyle=none;html=1;fontFamily=Comic Sans MS;fontSize=14;fontColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="8" target="5">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="640" y="120" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="19" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontFamily=Comic Sans MS;fontSize=14;fontColor=#000000;" edge="1" parent="1" source="5">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="502" y="300" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="5" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://images.freeimages.com/vhq/images/previews/a66/window-frame-template-139501.png;strokeColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="410" y="113" width="183" height="152.4" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="&lt;h1&gt;&lt;font color=&quot;#000000&quot; style=&quot;font-size: 18px;&quot; face=&quot;Comic Sans MS&quot;&gt;&lt;b style=&quot;&quot;&gt;INICIO&lt;/b&gt;&lt;/font&gt;&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="436.5" y="154.2" width="130" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="" style="image;html=1;image=img/lib/clip_art/people/Worker_Man_128x128.png;labelBackgroundColor=#000000;strokeColor=#000000;fontFamily=Comic Sans MS;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="461.5" y="10" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/At_sign.svg/640px-At_sign.svg.png;" vertex="1" parent="1">
+                    <mxGeometry x="280" y="140" width="70" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Correo Institucional&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Comic Sans MS;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="200" width="150" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="" style="endArrow=classic;html=1;fontFamily=Comic Sans MS;fontSize=14;fontColor=#000000;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="5">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="360" y="190" as="sourcePoint"/>
+                        <mxPoint x="370" y="130" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="14" value="" style="endArrow=classic;html=1;fontFamily=Comic Sans MS;fontSize=14;fontColor=#000000;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="15" target="5">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="620" y="170" as="sourcePoint"/>
+                        <mxPoint x="660" y="190" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="15" value="" style="image;html=1;image=img/lib/clip_art/general/Keys_128x128.png;labelBackgroundColor=none;strokeColor=#000000;fontFamily=Comic Sans MS;fontSize=14;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="660" y="130" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="Contraseña" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;fontFamily=Comic Sans MS;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="650" y="200" width="100" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/list.svg;labelBackgroundColor=none;strokeColor=#000000;fontFamily=Comic Sans MS;fontSize=14;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="451.5" y="300" width="90" height="128.57" as="geometry"/>
+                </mxCell>
             </root>
         </mxGraphModel>
     </diagram>

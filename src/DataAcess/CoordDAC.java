@@ -11,14 +11,25 @@ public class CoordDAC extends SQLiteDataHelper {
         super(AppConfiguration.getDBPathConnection());
     }
     /**
-     * Metodo usado para obtener todas las coordenadas de la tabla
+     * Metodo usado para obtener todas las coordenadas de las tablas dependiendo del usuario
      * @return Retorna todos los datos que la tabla nos envia
      * @throws AppException
      */
-    public ResultSet caGetAllCoords() throws AppException{
+    public ResultSet caGetAllCoords(String caUser) throws AppException{
+        String sql="";
         try{
-            String sql="SELECT *"
-                        +"FROM CA_COORDS";
+            if(caUser.equals("1751424324")){
+                sql="SELECT *"
+                    +"FROM CA_COORDS";
+            }
+            if(caUser.equals("1754944336")){
+                sql="SELECT *"
+                        +"FROM JA_COORDS";
+                }
+            if(caUser.equals("1234")){
+                sql="SELECT *"
+                    +"FROM PF_COORDS";
+            }
             return getResultSet(sql);
         }
         catch (SQLException e){
