@@ -1,45 +1,37 @@
 package BusinessLogic.Entities;
 
 public class Coord {
-    Coord caCoordMen;
-    Coord caCoordMay;
     int caCap;
     String caGeo;
     String caArs;
     
-    /**
-     * Constructor de la clase coord
-     * @param caCap Capacidad belica
-     * @param caGeo Gelocalizacion
-     * @param caArs Tipo de arsenal
-     */
     public Coord(int caCap, String caGeo, String caArs) {
         this.caCap = caCap;
         this.caGeo = caGeo;
         this.caArs = caArs;
     }
 
-    public int caGetCaCap() {
+    public int getCaCap() {
         return caCap;
     }
 
-    public void caSetCaCap(int caCap) {
+    public void setCaCap(int caCap) {
         this.caCap = caCap;
     }
 
-    public String caGetCaGeo() {
+    public String getCaGeo() {
         return caGeo;
     }
 
-    public void caSetCaGeo(String caGeo) {
+    public void setCaGeo(String caGeo) {
         this.caGeo = caGeo;
     }
 
-    public String caGetCaArs() {
+    public String getCaArs() {
         return caArs;
     }
 
-    public void caSetCaArs(String caArs) {
+    public void setCaArs(String caArs) {
         this.caArs = caArs;
     }
     
