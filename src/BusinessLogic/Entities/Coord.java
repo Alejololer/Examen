@@ -11,27 +11,27 @@ public class Coord {
         this.caArs = caArs;
     }
 
-    public int getCaCap() {
+    public int caGetCaCap() {
         return caCap;
     }
 
-    public void setCaCap(int caCap) {
+    public void caSetCaCap(int caCap) {
         this.caCap = caCap;
     }
 
-    public String getCaGeo() {
+    public String caGetCaGeo() {
         return caGeo;
     }
 
-    public void setCaGeo(String caGeo) {
+    public void caSetCaGeo(String caGeo) {
         this.caGeo = caGeo;
     }
 
-    public String getCaArs() {
+    public String caGetCaArs() {
         return caArs;
     }
 
-    public void setCaArs(String caArs) {
+    public void caSetCaArs(String caArs) {
         this.caArs = caArs;
     }
     
