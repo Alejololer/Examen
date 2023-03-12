@@ -141,6 +141,7 @@ public class main {
             System.out.println();
             System.out.println("[+] Arbol binario de coordenadas y bomba");
             System.out.println();
+            //Ordenamos las zonas en la lista de mayor a menor
             for (int caI = 0; caI < caFixed.size() - 1; caI++) {
                 for (int caJ = 0; caJ < caFixed.size() - caI - 1; caJ++) {
                     if ((caFixed.get(caJ)).caGetCaCap() < (caFixed.get(caJ + 1)).caGetCaCap()) {
@@ -150,6 +151,7 @@ public class main {
                     }
                 }
             }
+            //Imprimimos las zonas para nuestro arbol
             caCont=0;
             for (Coord caP : caFixed) {
                 for(int caI=0;caI<caCont*8;caI++)
