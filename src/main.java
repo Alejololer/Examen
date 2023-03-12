@@ -1,7 +1,9 @@
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Scanner;
+import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -98,7 +100,7 @@ public class main {
                     caFrameIndex = (caFrameIndex + 1) % caAnimationFrames.length;
                     Thread.sleep(10);
                 }
-                System.out.println("    "+caP.caGetCaCap()+"       "+caP.caGetCaGeo()+"      "+caP.caGetCaArs());
+                System.out.println("    "+caP.caGetCaCap()+"      "+caP.caGetCaGeo()+"      "+caP.caGetCaArs());
                 caCapBel=caP.caGetCaCap()+caCapBel;
                 caCoordTotal++;
             }
@@ -124,6 +126,7 @@ public class main {
                 System.out.print(caP.caGetCaCap()+" ");
             }
             System.out.println();
+            System.out.println();
             //Procedemos con la identificacion de sectores para aplicar la expresion regular que nos ha tocado
             System.out.println("[Bombas]");
             Pattern pattern = Pattern.compile(CAREGEX);
@@ -131,17 +134,29 @@ public class main {
             for (Coord caP : caFixed) {
                 Matcher matcher = pattern.matcher(caP.caGetCaArs());
                 if(matcher.find()){
-                    caP.caSetCaArs(caP.caGetCaArs()+"dt");
-                    System.out.println("La zona: "+caP.caGetCaGeo()+" sera bombeardada por el misil BOMB-IP, su arsenal es: "+caP.caGetCaArs());
+                    caP.caSetCaArs(caP.caGetCaArs()+"dt  BOMB-IP");
+                    System.out.println("La zona: "+caP.caGetCaGeo()+" contiene la bomba BOMB-IP, su arsenal es: "+caP.caGetCaArs());
                 }
             }
             System.out.println();
             System.out.println("[+] Arbol binario de coordenadas y bomba");
-            
-            
-            
-            
-
+            System.out.println();
+            for (int caI = 0; caI < caFixed.size() - 1; caI++) {
+                for (int caJ = 0; caJ < caFixed.size() - caI - 1; caJ++) {
+                    if ((caFixed.get(caJ)).caGetCaCap() < (caFixed.get(caJ + 1)).caGetCaCap()) {
+                        Coord caTemp = caFixed.get(caJ);
+                        caFixed.set(caJ, caFixed.get(caJ + 1));
+                        caFixed.set(caJ + 1, caTemp);
+                    }
+                }
+            }
+            caCont=0;
+            for (Coord caP : caFixed) {
+                for(int caI=0;caI<caCont*8;caI++)
+                    System.out.print(" ");
+                System.out.print(caP.caGetCaGeo()+"{ "+caP.caGetCaArs()+" }"+"\n");
+                caCont++;
+            }
         } catch (Exception e) { }
         
         
